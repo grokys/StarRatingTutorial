@@ -10,13 +10,18 @@
     <Setter Property="Template">
       <ControlTemplate>
         <StackPanel Orientation="Horizontal">
-          <Path Data="{StaticResource Star}" Stroke="Orange" StrokeThickness="1" Margin="2"/>
-          <Path Data="{StaticResource Star}" Stroke="Orange" StrokeThickness="1" Margin="2"/>
-          <Path Data="{StaticResource Star}" Stroke="Orange" StrokeThickness="1" Margin="2"/>
-          <Path Data="{StaticResource Star}" Stroke="Orange" StrokeThickness="1" Margin="2"/>
-          <Path Data="{StaticResource Star}" Stroke="Orange" StrokeThickness="1" Margin="2"/>
+          <Path Data="{StaticResource Star}"/>
+          <Path Data="{StaticResource Star}"/>
+          <Path Data="{StaticResource Star}"/>
+          <Path Data="{StaticResource Star}"/>
+          <Path Data="{StaticResource Star}"/>
         </StackPanel>
       </ControlTemplate>
     </Setter>
+  </Style>
+  <Style Selector="local|StarRating /template/ Path">
+    <Setter Property="Stroke" Value="Orange"/>
+    <Setter Property="StrokeThickness" Value="1"/>
+    <Setter Property="Margin" Value="2"/>
   </Style>
 </Styles>    
