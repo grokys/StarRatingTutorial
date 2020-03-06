@@ -26,6 +26,7 @@
     </Setter>
   </Style>
   <Style Selector="local|StarRating /template/ Path">
+    <Setter Property="Fill" Value="Transparent"/>
     <Setter Property="Stroke" Value="{Binding Foreground, RelativeSource={RelativeSource TemplatedParent}}"/>
     <Setter Property="StrokeThickness" Value="1"/>
     <Setter Property="Margin" Value="2"/>

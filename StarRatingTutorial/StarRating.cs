@@ -1,7 +1,9 @@
-﻿using Avalonia;
+﻿using System;
+using Avalonia;
 using Avalonia.Controls;
 using Avalonia.Controls.Primitives;
 using Avalonia.Controls.Shapes;
+using Avalonia.Input;
 using Avalonia.Media;
 
 namespace StarRatingTutorial
@@ -37,6 +39,21 @@ namespace StarRatingTutorial
             };
 
             UpdateStars();
+        }
+
+        protected override void OnPointerPressed(PointerPressedEventArgs e)
+        {
+            base.OnPointerPressed(e);
+
+            if (stars != null)
+            {
+                var index = Array.IndexOf(stars, e.Source);
+
+                if (index != -1)
+                {
+                    Rating = index + 1;
+                }
+            }
         }
 
         protected override void OnPropertyChanged(AvaloniaPropertyChangedEventArgs e)
