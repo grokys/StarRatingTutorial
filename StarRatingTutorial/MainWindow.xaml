@@ -1,0 +1,8 @@
+﻿<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:StarRatingTutorial"
+        x:Class="StarRatingTutorial.MainWindow"
+        Width="400" Height="250"
+        Title="Star Rating">
+  <local:StarRating Rating="3" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+</Window>

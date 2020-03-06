@@ -1,0 +1,22 @@
+﻿<Styles xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:StarRatingTutorial">
+  <Style Selector="local|StarRating">
+    <Style.Resources>
+      <PathGeometry x:Key="Star">
+        M 18.962022,22.564585 11.973475,18.904928 4.9968236,22.587211 6.3177845,14.809812 0.65982111,9.3125098 8.4647672,8.1654696 11.944605,1.085667 15.447366,8.1541569 23.255988,9.2759 17.615867,14.791507Z
+      </PathGeometry>
+    </Style.Resources>
+    <Setter Property="Template">
+      <ControlTemplate>
+        <StackPanel Orientation="Horizontal">
+          <Path Data="{StaticResource Star}" Stroke="Orange" StrokeThickness="1" Margin="2"/>
+          <Path Data="{StaticResource Star}" Stroke="Orange" StrokeThickness="1" Margin="2"/>
+          <Path Data="{StaticResource Star}" Stroke="Orange" StrokeThickness="1" Margin="2"/>
+          <Path Data="{StaticResource Star}" Stroke="Orange" StrokeThickness="1" Margin="2"/>
+          <Path Data="{StaticResource Star}" Stroke="Orange" StrokeThickness="1" Margin="2"/>
+        </StackPanel>
+      </ControlTemplate>
+    </Setter>
+  </Style>
+</Styles>    
