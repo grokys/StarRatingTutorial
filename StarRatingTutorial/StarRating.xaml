@@ -9,13 +9,18 @@
     </Style.Resources>
     <Setter Property="Template">
       <ControlTemplate>
-        <StackPanel Orientation="Horizontal">
-          <Path Name="PART_One" Data="{StaticResource Star}"/>
-          <Path Name="PART_Two" Data="{StaticResource Star}"/>
-          <Path Name="PART_Three" Data="{StaticResource Star}"/>
-          <Path Name="PART_Four" Data="{StaticResource Star}"/>
-          <Path Name="PART_Five" Data="{StaticResource Star}"/>
-        </StackPanel>
+        <Border Background="{TemplateBinding Background}"
+                BorderBrush="{TemplateBinding BorderBrush}"
+                BorderThickness="{TemplateBinding BorderThickness}"
+                Padding="{TemplateBinding Padding}">
+          <StackPanel Orientation="Horizontal" Margin="0 0 0 1">
+            <Path Name="PART_One" Data="{StaticResource Star}"/>
+            <Path Name="PART_Two" Data="{StaticResource Star}"/>
+            <Path Name="PART_Three" Data="{StaticResource Star}"/>
+            <Path Name="PART_Four" Data="{StaticResource Star}"/>
+            <Path Name="PART_Five" Data="{StaticResource Star}"/>
+          </StackPanel>
+        </Border>
       </ControlTemplate>
     </Setter>
   </Style>
