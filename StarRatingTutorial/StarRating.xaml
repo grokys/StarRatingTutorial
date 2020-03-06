@@ -10,11 +10,11 @@
     <Setter Property="Template">
       <ControlTemplate>
         <StackPanel Orientation="Horizontal">
-          <Path Data="{StaticResource Star}"/>
-          <Path Data="{StaticResource Star}"/>
-          <Path Data="{StaticResource Star}"/>
-          <Path Data="{StaticResource Star}"/>
-          <Path Data="{StaticResource Star}"/>
+          <Path Name="PART_One" Data="{StaticResource Star}"/>
+          <Path Name="PART_Two" Data="{StaticResource Star}"/>
+          <Path Name="PART_Three" Data="{StaticResource Star}"/>
+          <Path Name="PART_Four" Data="{StaticResource Star}"/>
+          <Path Name="PART_Five" Data="{StaticResource Star}"/>
         </StackPanel>
       </ControlTemplate>
     </Setter>
