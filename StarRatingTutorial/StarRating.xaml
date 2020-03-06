@@ -7,6 +7,7 @@
         M 18.962022,22.564585 11.973475,18.904928 4.9968236,22.587211 6.3177845,14.809812 0.65982111,9.3125098 8.4647672,8.1654696 11.944605,1.085667 15.447366,8.1541569 23.255988,9.2759 17.615867,14.791507Z
       </PathGeometry>
     </Style.Resources>
+    <Setter Property="Foreground" Value="Orange"/>
     <Setter Property="Template">
       <ControlTemplate>
         <Border Background="{TemplateBinding Background}"
@@ -25,8 +26,11 @@
     </Setter>
   </Style>
   <Style Selector="local|StarRating /template/ Path">
-    <Setter Property="Stroke" Value="Orange"/>
+    <Setter Property="Stroke" Value="{Binding Foreground, RelativeSource={RelativeSource TemplatedParent}}"/>
     <Setter Property="StrokeThickness" Value="1"/>
     <Setter Property="Margin" Value="2"/>
+  </Style>
+  <Style Selector="local|StarRating /template/ Path.filled">
+    <Setter Property="Fill" Value="{Binding Foreground, RelativeSource={RelativeSource TemplatedParent}}"/>
   </Style>
 </Styles>    

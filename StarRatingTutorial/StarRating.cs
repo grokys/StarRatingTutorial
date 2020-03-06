@@ -53,7 +53,7 @@ namespace StarRatingTutorial
             {
                 for (var i = 0; i < stars.Length; ++i)
                 {
-                    stars[i].Fill = i < Rating ? Brushes.Orange : null;
+                    stars[i].Classes.Set("filled", i < Rating);
                 }
             }
         }

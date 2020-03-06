@@ -8,6 +8,7 @@
                     Background="Gray"
                     BorderThickness="2"
                     BorderBrush="Black"
+                    Foreground="WhiteSmoke"
                     HorizontalAlignment="Center"
                     VerticalAlignment="Center"/>
 </Window>
